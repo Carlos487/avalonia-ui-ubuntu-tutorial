@@ -5,5 +5,10 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MyApp.MainWindow"
         Title="MyApp">
-    Welcome to Avalonia!
+    <StackPanel Orientation="Vertical">
+        <TextBlock Name="NameLabel">What is your name?</TextBlock>
+        <TextBox Name="NameTextBox"></TextBox>
+        <Button Name="GreetButton" Click="GreetButton_Click">Say Hello!</Button>
+        <TextBlock Name="MessageLabel"></TextBlock>
+    </StackPanel>
 </Window>
